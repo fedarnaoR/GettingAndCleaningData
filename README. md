@@ -1,0 +1,30 @@
+==================================================================
+Data Science Specialization
+Getting And Cleaning Data Project
+Author: Federico M. Arnao Martin
+==================================================================
+
+## Introduction
+The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. 
+The goal is to prepare tidy data that can be used for later analysis.
+
+## Data
+The data for this assignment can be downloaded from the course web site:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+This file containts: 
+* **./train/X_train.txt** Training Set
+* **./train/y_train.txt** Training Label
+* **./train/subject_train.txt** The subject who performed the activity for each window sample. Its range is from 1 to 30.
+* **./test/X_test.txt** Test Set
+* **./test/y_test.txt** Test Label
+* **./test/subject_test.txt** The subject who performed the activity for each window sample. Its range is from 1 to 30.
+* **./features_info.txt** Information about the variables used on the featuer vector.
+* **./features.txt** List of all features.
+* **./activity_labels.txt** Activity name.
+
+## Steps
+* **Step 1** Load and merge train and test dataset Sets. The data.frame resulted is mergeSet (merge ./train/X_train.txt y ./test/X_test.txt).
+* **Step 2** Extracts only the measurements on the mean and standard deviation for each measurement.
+* **Step 3** Uses descriptive activity names to name the activities in the data set. The data.frame resulted is mergeLabel.
+* **Step 4** Appropriately labels the data set with descriptive variable names. The data.frame resulted is cleanedData (= mergeSubject + mergeLabel + mergeSet)
+* **Step 5** From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.

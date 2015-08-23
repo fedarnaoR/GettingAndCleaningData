@@ -1,6 +1,9 @@
 #I comment the following line to be specific to my system.
 #setwd("C:/Users/Intrea/Documents/Cursos/R/GettingAndCleaningData/data")
 
+#It's necesary for use 'melt' in the five point.
+library(reshape2)
+
 #1. Merges the training and the test sets to create one data set.
 #Load and merge Sets.
 trainSet <- read.table("./train/X_train.txt")
